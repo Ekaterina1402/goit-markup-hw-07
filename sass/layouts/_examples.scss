@@ -13,10 +13,10 @@
   width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-}
 
-.works-item:nth-child(3) {
-  margin-right: 0px;
+  &:nth-child(3) {
+    margin-right: 0px;
+  }
 }
 
 .examples-titel,

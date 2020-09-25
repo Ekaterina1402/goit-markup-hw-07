@@ -17,12 +17,13 @@
   border: transparent;
   border-radius: 50%;
   transition: background-color $timing-function, fill $timing-function;
-}
-.social-icon-link:hover,
-.social-icon-link:focus {
-  background-color: $second-accent-color;
-  border-radius: 50%;
-  fill: $accent-color;
+
+  &:hover,
+  &:focus {
+    background-color: $second-accent-color;
+    border-radius: 50%;
+    fill: $accent-color;
+  }
 }
 .social-icon-link:hover .social-icon,
 .social-icon-link:focus .social-icon {

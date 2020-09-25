@@ -10,24 +10,24 @@
 .link {
   display: flex;
   position: relative;
-}
-.link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -36px;
-  display: flex;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: $second-accent-color;
-  opacity: 0;
-  transition: opacity $timing-function;
-}
-.link {
   transition: color $timing-function;
   color: $title-text-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -36px;
+    display: flex;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $second-accent-color;
+    opacity: 0;
+    transition: opacity $timing-function;
+  }
 }
+
 .current {
   color: $second-accent-color;
 }
@@ -45,17 +45,16 @@
   line-height: 0.87;
   letter-spacing: 0.02em;
   transition: color $timing-function;
-}
 
-.nav-links .link:hover,
-.nav-links .link:focus {
-  color: $second-accent-color;
-}
+  &:hover,
+  &:focus {
+    color: $second-accent-color;
+  }
 
-.nav-links .link:active {
-  color: $second-accent-color;
+  &:active {
+    color: $second-accent-color;
+  }
 }
-
 .addr-links .link {
   color: $primary-text-color;
   text-decoration: none;
@@ -66,17 +65,16 @@
   line-height: 1.1;
   letter-spacing: 0.02em;
   transition: color $timing-function;
-}
 
-.addr-links .link:hover,
-.addr-links .link:focus {
-  color: $second-accent-color;
-}
+  &:hover,
+  &:focus {
+    color: $second-accent-color;
+  }
 
-.addr-links .link:active {
-  color: $second-accent-color;
+  &:active {
+    color: $second-accent-color;
+  }
 }
-
 .nav-links {
   margin: 0;
   padding: 0;
@@ -88,11 +86,12 @@
   margin: 0;
 }
 
-.item:not(:last-child) {
-  margin-right: 50px;
-}
 .item {
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }

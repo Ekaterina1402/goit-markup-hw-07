@@ -32,9 +32,10 @@ ul {
   margin-bottom: 0px;
   margin-left: 0;
   vertical-align: top;
-}
-.content-box:not(:last-child) {
-  margin-right: 0px;
+
+  &:not(:last-child) {
+    margin-right: 0px;
+  }
 }
 
 img {

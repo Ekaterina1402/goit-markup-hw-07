@@ -49,17 +49,16 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   transition: color $timing-function;
-}
 
-.footer-links .link:hover,
-.footer-links .link:focus {
-  color: $second-accent-color;
-}
+  &:hover,
+  &:focus {
+    color: $second-accent-color;
+  }
 
-.footer-links .link:active {
-  color: $second-accent-color;
+  &:active {
+    color: $second-accent-color;
+  }
 }
-
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
